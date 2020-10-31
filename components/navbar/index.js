@@ -1,10 +1,12 @@
 import React from 'react';
+import Link from 'next/link'
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 const Navbar = () =>{
     return (
       <div>
-
         <div className="container Navbar">
           <div className="row">
             <div className="col-lg-3 col-md-4 col-sm-12 col-12 iconSec">
@@ -15,18 +17,17 @@ const Navbar = () =>{
               <img src="/icon6.webp" alt="Vercel Logo" className="logo" />
             </div>
             <div className="col-lg-6 col-md-6 col-sm-12 col-12 navLinksSec">
-              <a href="/">Home</a>
-              <a href="/">How dose it work</a>
-              <a href="/">NFT Money</a>
-              <a href="/">My collection</a>
+              <Link href="/"><a>Home</a></Link>
+              <Link href="../howItWorks"><a>How dose it work</a></Link>
+              <Link href="../Money"><a>NFT Money</a></Link>
+              <a href="">My collection</a>
               <a href="/">Opensea</a>
             </div>
             <div className="col-lg-3 col-md-3 col-sm-12 col-12 iconSec">
               <button className="navbtn">Connect wallet</button>
             </div>
           </div>
-        </div>
-          
+        </div>  
         <style jsx>{`
                 *{
                   font-family: 'Montserrat', sans-serif;
